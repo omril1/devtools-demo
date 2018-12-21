@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-app.get('/serverTiming', require('./serverTiming'));
+app.get('/serverTiming', require('./serverRoutes/serverTiming'));
 
 app.use(express.static('public'));
 
