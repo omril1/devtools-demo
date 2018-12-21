@@ -1,0 +1,13 @@
+{
+  "name": "devtools-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "omril1 <omri2593@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "express": "^4.16.4"
+  }
+}
