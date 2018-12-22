@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 app.get('/serverTiming', require('./serverRoutes/serverTiming'));
+app.get('/restApi', require('./serverRoutes/restApi'));
 
 app.use(express.static('public'));
 

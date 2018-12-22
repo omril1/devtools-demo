@@ -3,3 +3,8 @@ async function makeServerTimingCall() {
   const text = await response.text();
   return text;
 }
+
+async function makeRestApiCall() {
+  const response = await fetch('./restApi');
+  console.log(await response.json());
+}
