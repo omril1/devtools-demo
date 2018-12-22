@@ -1,0 +1,15 @@
+.boxes-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  --size: 70px;
+}
+
+.box {
+  width: var(--size);
+  height: var(--size);
+  padding: 8px;
+  margin: 0 calc(var(--size) / 8);
+  border: 6px solid burlywood;
+  background-color: turquoise;
+}
