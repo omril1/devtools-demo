@@ -1,3 +1,7 @@
+body {
+  height: 100vh;
+}
+
 .boxes-container {
   display: flex;
   flex-direction: row;
@@ -13,3 +17,42 @@
   border: 6px solid burlywood;
   background-color: turquoise;
 }
+
+.animation-div {
+  margin: 30vh auto;
+  width: 40vw;
+  height: 40vh;
+  font-size: 2em;
+  /* animation: rotation2 20s infinite linear backwards; */
+}
+.animation-div > div {
+  /* animation-name: rotation; */
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: inline-block;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(-180deg) translate(0, 100px);
+  }
+  100% {
+    transform: rotate(-360deg) translate(100px, 0);
+  }
+}
+
+
+/* @keyframes rotation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
